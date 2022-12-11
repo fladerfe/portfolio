@@ -29,42 +29,41 @@
             color: #000000;
         }
     }
-    .skills{
-        &__point{
-            margin-top: 120px;
-            display: grid;
-            grid-template-columns: repeat(3, 350px);
-            grid-template-rows: repeat(2, 70px);
-            row-gap: 32px;
-            justify-content: space-between;
-            &-title{
-                padding-top: 7px; 
-                position: relative;
-                padding-left: 14px;
-                @include before_circle;
-                &:before{
-                    top: -1px;
-                }
-            }
-            &-item{        
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                flex-wrap: wrap;
+    &__point{
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, 70px);
+        row-gap: 32px;
+        justify-content: space-between;
+        &-title{
+            padding-top: 7px; 
+            position: relative;
+            padding-left: 14px;
+            @include before_circle;
+            &:before{
+                top: -1px;
             }
         }
-        &__progress{
-            margin-top: 27px;
-            height: 14px;
-            width: 100%;
-            border-radius: 4px;
-            background-color: #E8E4DE;
-            &-point{
-                display: block;
-                height: 14px;
-                border-radius: 4px;
-                background-color: $main-color;
-            }
+        &-item{        
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
         }
     }
+    &__progress{
+        margin-top: 27px;
+        height: 14px;
+        width: 100%;
+        border-radius: 4px;
+        background-color: #E8E4DE;
+        &-point{
+            display: block;
+            height: 14px;
+            border-radius: 4px;
+            background-color: $main-color;
+        }
+    }
+
 }
